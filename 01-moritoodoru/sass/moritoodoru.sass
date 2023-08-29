@@ -42,7 +42,6 @@ body
         &:hover
             background-color: #D09B2D
             color: #FFFFFF
-
 .carousel-inner
     margin-top: 2.5rem
     margin-left: 1.5rem
@@ -53,22 +52,177 @@ body
     h2
         text-align: center
         margin: 5rem
-    .date
-        font-size: 1.2rem
-        background-color: #43392F
-        color: #FFFFFF
-        display: inline
-        padding: 0em 1.2em 0.3em 1.1em
-        border-radius: 0.2rem
-        letter-spacing: 0.1em
-    .card-title
-        margin-left: 5px
+    a
+        text-decoration: none
+    .card
+        width: 85%
+        &:hover
+            background-color: #43392F
+            color: #FFFFFF
+        .date
+            font-size: 1.2rem
+            background-color: #43392F
+            color: #FFFFFF
+            display: inline
+            padding: 0em 1.2em 0.3em 1.1em
+            border-radius: 0.2rem
+            letter-spacing: 0.1em
+            &:hover
+                background-color: #D09B2D
+                color: #FFFFFF
+                
+        .card-title
+            margin: 1.5rem
+            padding: 1.5rem
+            margin-left: 5px
+            text-align: center
+    .note
         text-align: center
-    .note33
-        background-color: #43392F
+        margin-top: 5rem
+        a
+            color: #43392F
+            text-decoration: underline
+            &:hover
+                color: #D09B2D
+                text-decoration: underline
 
-.home-abute 
-    text-align: center
-    background-color: pink
+.home-about
+    position: relative
+    padding: 5rem
+    h2
+        writing-mode: vertical-rl /* 垂直排列 */
+        position: absolute
+        left: 3.5rem
+        top: 0
+        letter-spacing: 1rem
+        font-size: 2.5rem
+        z-index: 2
+    .total
+        position: relative 
+        z-index: 1 
+    .home-body
+        position: relative
+        width: 100%
+        font-size: 1.2rem
+        display: flex
+    .home-text
+        background-color: #FFFFFF
+        padding: 4.5rem
+        width: 100%
+    .more
+        margin-top: 3.5rem
+        a
+            color: #1B1814
+            &:hover
+                color: #D09B2D
+    .image-overlay
+        position: absolute
+        top: 50%
+        left: 50%
+        padding: 1rem
+        transform: translate(0%, -50%)
+        img
+            width: 100%
+            height: auto
+            animation: rotateImage 100s infinite linear
 
+@keyframes rotateImage
+    0%
+        transform: rotate(0deg)
+    100%
+        transform: rotate(360deg)
 
+.info
+    width: 100%
+    background-color: #FCFBF6
+    h2
+        padding: 2rem
+        display: inline-block
+        margin-left: 5rem
+        background-color: #FFFFFF
+    .info-body
+        margin: 5rem
+        font-size: 1.5rem
+    .info-img
+        display: flex
+        flex-direction: row-reverse
+        margin-right: 5.5rem
+        align-items: center
+        padding: 1.5rem
+        img
+            max-width: 100%
+            border-radius: 25px
+.home-join
+    margin: 5rem
+    display: flex
+    align-items: flex-end
+    h2
+        writing-mode: vertical-rl /* 垂直排列 */
+        left: 3.5rem
+        top: 0
+        letter-spacing: 1rem
+        font-size: 3.5rem
+        padding: 1rem
+        background-color: #FFFFFF
+    .join-text
+        margin-left: 5rem
+        font-size: 1.2rem
+.goods
+    margin: 5rem
+    h3
+        border-left: 5px solid #D09B2D
+        padding-left: 1rem
+        letter-spacing: 0.5rem
+        margin-bottom: 5rem
+    .card
+        max-width: 100%
+        height: 100%
+        border-radius: 1.5rem
+        &:hover
+            background-color: #43392F
+            color: #FFFFFF
+            border-radius: 1.5rem 
+        img
+            border-radius: 1.5rem 1.5rem 0 0
+        .card-title
+            padding: 3rem
+            font-size: 1.2rem
+            text-align: center
+            font-weight: bold
+            letter-spacing: 0.3rem
+.volunteer,.donation 
+    margin: 5rem
+    
+    h3
+        border-left: 5px solid #D09B2D
+        padding-left: 1rem
+        letter-spacing: 0.5rem
+        margin-bottom: 5rem
+    .card
+        border-radius: 1.5rem 
+        max-width:100% 
+        height: auto
+        img
+            width: 100%
+            height:100%
+            border-radius: 1.5rem 0 0 1.5rem
+    .card-body
+        padding: 3rem
+        letter-spacing: 0.05rem
+        font-size: 1.1rem
+        p
+            letter-spacing: 0.04rem
+            line-height: 2
+        a
+            color: #1B1814
+            &:hover
+                color: #D09B2D
+.home-instagram
+    background-color: #FCFBF6
+    position: relative
+    margin: 5rem
+    .leaf-title
+        position: absolute
+        letter-spacing: 1rem
+  
+                
