@@ -298,12 +298,13 @@ body {
 .home-instagram .instagram-body {
   position: relative;
   top: 0;
-  margin-top: 15rem;
+  margin-top: 5rem;
 }
 .home-instagram h3 {
   writing-mode: vertical-rl;
   letter-spacing: 1.2rem;
   margin-left: 6rem;
+  justify-content: center;
 }
 .home-instagram .text {
   font-size: 1.1rem;
@@ -367,7 +368,6 @@ footer {
   display: block;
   height: 100%;
   background-color: #43392F;
-  border: 3px solid green;
   color: #ffffff;
 }
 footer a {
@@ -410,4 +410,20 @@ footer .footer-subscribe {
 }
 footer .footer-subscribe .subscribe {
   display: inline-flex;
+  margin: 3.5rem;
+}
+footer .footer-subscribe label {
+  margin-top: 2rem;
+  padding-right: 1rem;
+  letter-spacing: 0.06rem;
+}
+footer .footer-subscribe button {
+  background-color: #FCFBF6;
+}
+footer .footer-subscribe button:hover {
+  background-color: #FCFBF6;
+  color: #43392F;
+}
+footer .footer-copyright {
+  margin-left: 3.5rem;
 }/*# sourceMappingURL=moritoodoru.css.map */
