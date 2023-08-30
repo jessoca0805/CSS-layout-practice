@@ -4,8 +4,8 @@
 body
     background-color: #F8F6F0
     font-family: 'Zen Maru Gothic', sans-serif
-    margin: 1.5rem
-
+    height: 100%
+    margin-top: 5rem
 .l-headerPnav
     .fa-arrow-up-right-from-square
         color: #D09B2D
@@ -90,7 +90,7 @@ body
     position: relative
     padding: 5rem
     h2
-        writing-mode: vertical-rl /* 垂直排列 */
+        writing-mode: vertical-rl  //垂直排列 
         position: absolute
         left: 3.5rem
         top: 0
@@ -222,10 +222,10 @@ body
     margin: 5rem
     padding: 5rem
     position: relative
-    display: flex
-    // justify-content: center
+    // display: flex
     // align-items: center
-    height: 100vh
+
+
     .leaf-title
         background-color:  #D09B2D
         height: 64px
@@ -236,13 +236,117 @@ body
         background-size: contain //背景圖等比例縮放
         top: 10%
         right: 50%
-        transform: translate(-10%, -50%) //使用負值讓元素置中
+        transform: translate(-0%, -50%) //使用負值讓元素置中
         position: absolute
-    h3 
+    .instagram-body
+        position: relative
+
+        // display: block
+        // align-items: center
+        // justify-content: center
+        top: 0
+        // transform: translate(35%, -50%)
+        margin-top: 15rem
+    h3
         writing-mode: vertical-rl // 垂直排列 
         letter-spacing: 1.2rem
+        // margin-top: 5rem
+        margin-left: 6rem
+    .text
+        font-size: 1.1rem
+    .instagram-img
+        display: flex
+        
+        .instagram-feed-images
+            justify-content: space-between
+            width: 20%
+            height: 250px
+            margin: 0 auto
+            position: relative
+            a
+                &:hover
+                    opacity: 0.9
+        img
+            width: 100%
+            height: 100%
+            border-radius: 0.5rem
+        i 
+            position: absolute
+            top: 0
+            right: 0
+            margin: 1rem
+            font-size: 1.5rem
+            color: #ffffff
+    .instagram-more
         text-align: center
-
-
-  
+        margin-top: 2rem
+        a
+            color: #1B1814
+            &:hover
+                color: #D09B2D
                 
+            .fa-arrow-up
+                color: #D09B2D
+                font-size: 0.8rem
+                transform: rotate(45deg)
+                margin-left: 0.4rem
+
+                &:hover
+                    animation: blink 1s ease-in-out
+                    transition: transform 0.3s
+
+@keyframes blink
+    0% 
+        transform: translateY(0)
+    100%
+        transform: translateY(-45px)    
+
+footer
+    display: block
+    height: 100%
+    background-color: #43392F
+    border: 3px solid green
+    color: #ffffff
+    a
+        color: #ffffff
+        text-decoration: none
+    .fa-arrow-up-right-from-square
+        color: #D09B2D
+    .footer-title
+        display: flex
+        h2
+            margin: 3.5rem 0.5rem 0.5rem 3.5rem
+        .facebook 
+            display: flex
+            margin: 3.5rem 0.5rem 0.5rem 1.5rem
+            span
+                margin: 0.7rem  0.7rem  0.6rem 0.3rem 
+    .footer-about
+        margin: 0rem  0rem 0rem 3rem 
+        .footer-about-link
+            padding: 0.5rem
+            &:hover
+                text-decoration: underline
+        .footer-thebase   
+            margin: 1.5rem  0rem 0rem 0rem 
+            span
+                margin: 0.7rem  0.7rem  0.6rem 0.7rem
+    .footer-subscribe
+        // display: inline-flex
+        // display: flex
+        // top:50%
+        margin: 3.5rem
+        // right: 40%
+        // justify-content: right
+        // position: absolute
+        // justify-content: flex-end
+        // flex-direction: row-reverse
+        // align-items: center
+                // display: block
+        // align-items: center
+        // justify-content: center
+        .subscribe
+            display: inline-flex
+
+
+            

@@ -6,7 +6,8 @@
 body {
   background-color: #F8F6F0;
   font-family: "Zen Maru Gothic", sans-serif;
-  margin: 1.5rem;
+  height: 100%;
+  margin-top: 5rem;
 }
 
 .l-headerPnav .fa-arrow-up-right-from-square {
@@ -281,8 +282,6 @@ body {
   margin: 5rem;
   padding: 5rem;
   position: relative;
-  display: flex;
-  height: 100vh;
 }
 .home-instagram .leaf-title {
   background-color: #D09B2D;
@@ -293,11 +292,122 @@ body {
   background-size: contain;
   top: 10%;
   right: 50%;
-  transform: translate(-10%, -50%);
+  transform: translate(0%, -50%);
   position: absolute;
+}
+.home-instagram .instagram-body {
+  position: relative;
+  top: 0;
+  margin-top: 15rem;
 }
 .home-instagram h3 {
   writing-mode: vertical-rl;
   letter-spacing: 1.2rem;
+  margin-left: 6rem;
+}
+.home-instagram .text {
+  font-size: 1.1rem;
+}
+.home-instagram .instagram-img {
+  display: flex;
+}
+.home-instagram .instagram-img .instagram-feed-images {
+  justify-content: space-between;
+  width: 20%;
+  height: 250px;
+  margin: 0 auto;
+  position: relative;
+}
+.home-instagram .instagram-img .instagram-feed-images a:hover {
+  opacity: 0.9;
+}
+.home-instagram .instagram-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+}
+.home-instagram .instagram-img i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1rem;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+.home-instagram .instagram-more {
   text-align: center;
+  margin-top: 2rem;
+}
+.home-instagram .instagram-more a {
+  color: #1B1814;
+}
+.home-instagram .instagram-more a:hover {
+  color: #D09B2D;
+}
+.home-instagram .instagram-more a .fa-arrow-up {
+  color: #D09B2D;
+  font-size: 0.8rem;
+  transform: rotate(45deg);
+  margin-left: 0.4rem;
+}
+.home-instagram .instagram-more a .fa-arrow-up:hover {
+  animation: blink 1s ease-in-out;
+  transition: transform 0.3s;
+}
+
+@keyframes blink {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-45px);
+  }
+}
+footer {
+  display: block;
+  height: 100%;
+  background-color: #43392F;
+  border: 3px solid green;
+  color: #ffffff;
+}
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+footer .fa-arrow-up-right-from-square {
+  color: #D09B2D;
+}
+footer .footer-title {
+  display: flex;
+}
+footer .footer-title h2 {
+  margin: 3.5rem 0.5rem 0.5rem 3.5rem;
+}
+footer .footer-title .facebook {
+  display: flex;
+  margin: 3.5rem 0.5rem 0.5rem 1.5rem;
+}
+footer .footer-title .facebook span {
+  margin: 0.7rem 0.7rem 0.6rem 0.3rem;
+}
+footer .footer-about {
+  margin: 0rem 0rem 0rem 3rem;
+}
+footer .footer-about .footer-about-link {
+  padding: 0.5rem;
+}
+footer .footer-about .footer-about-link:hover {
+  text-decoration: underline;
+}
+footer .footer-about .footer-thebase {
+  margin: 1.5rem 0rem 0rem 0rem;
+}
+footer .footer-about .footer-thebase span {
+  margin: 0.7rem 0.7rem 0.6rem 0.7rem;
+}
+footer .footer-subscribe {
+  margin: 3.5rem;
+}
+footer .footer-subscribe .subscribe {
+  display: inline-flex;
 }/*# sourceMappingURL=moritoodoru.css.map */
