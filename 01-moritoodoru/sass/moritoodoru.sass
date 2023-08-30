@@ -157,7 +157,7 @@ body
     display: flex
     align-items: flex-end
     h2
-        writing-mode: vertical-rl /* 垂直排列 */
+        writing-mode: vertical-rl // 垂直排列 
         left: 3.5rem
         top: 0
         letter-spacing: 1rem
@@ -219,10 +219,30 @@ body
                 color: #D09B2D
 .home-instagram
     background-color: #FCFBF6
-    position: relative
     margin: 5rem
+    padding: 5rem
+    position: relative
+    display: flex
+    // justify-content: center
+    // align-items: center
+    height: 100vh
     .leaf-title
+        background-color:  #D09B2D
+        height: 64px
+        width: 50px
+        &::before
+        background-image: url("../01-moritoodoru/img/title-leaf-1.png")
+        background-repeat: no-repeat //照片不要重複
+        background-size: contain //背景圖等比例縮放
+        top: 10%
+        right: 50%
+        transform: translate(-10%, -50%) //使用負值讓元素置中
         position: absolute
-        letter-spacing: 1rem
+    h3 
+        writing-mode: vertical-rl // 垂直排列 
+        letter-spacing: 1.2rem
+        text-align: center
+
+
   
                 

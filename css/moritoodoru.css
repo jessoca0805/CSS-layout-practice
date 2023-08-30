@@ -278,10 +278,26 @@ body {
 
 .home-instagram {
   background-color: #FCFBF6;
-  position: relative;
   margin: 5rem;
+  padding: 5rem;
+  position: relative;
+  display: flex;
+  height: 100vh;
 }
 .home-instagram .leaf-title {
+  background-color: #D09B2D;
+  height: 64px;
+  width: 50px;
+  background-image: url("../01-moritoodoru/img/title-leaf-1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 10%;
+  right: 50%;
+  transform: translate(-10%, -50%);
   position: absolute;
-  letter-spacing: 1rem;
+}
+.home-instagram h3 {
+  writing-mode: vertical-rl;
+  letter-spacing: 1.2rem;
+  text-align: center;
 }/*# sourceMappingURL=moritoodoru.css.map */
