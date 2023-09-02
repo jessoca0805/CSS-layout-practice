@@ -340,13 +340,13 @@ body {
 .home-instagram .instagram-img .instagram-feed-images {
   display: inline-flex;
 }
-.home-instagram .instagram-img .instagram-feed-images a:hover {
-  opacity: 0.9;
-}
 .home-instagram .instagram-img .instagram-feed-images .instagram-feed-images-div {
   padding: 0.5rem;
   text-align: end;
   position: relative;
+}
+.home-instagram .instagram-img .instagram-feed-images .instagram-feed-images-div a:hover {
+  opacity: 0.9;
 }
 .home-instagram .instagram-img .instagram-feed-images .instagram-feed-images-div .clone {
   font-size: 1.5rem;
