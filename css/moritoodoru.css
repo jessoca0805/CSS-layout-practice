@@ -75,16 +75,18 @@ body {
 }
 .home-news a {
   text-decoration: none;
+  color: #43392F;
 }
-.home-news .card {
+.home-news .card-news {
+  background-color: #FFFFFF;
   width: 22.5rem;
   margin: 1.5rem;
 }
-.home-news .card:hover {
+.home-news .header:hover {
   background-color: #43392F;
   color: #FFFFFF;
 }
-.home-news .card .date {
+.home-news .header .date {
   font-size: 1.2rem;
   background-color: #43392F;
   color: #FFFFFF;
@@ -93,15 +95,17 @@ body {
   border-radius: 0.2rem;
   letter-spacing: 0.1em;
 }
-.home-news .card .date:hover {
+.home-news .header .date:hover {
   background-color: #D09B2D;
   color: #FFFFFF;
 }
-.home-news .card .card-title {
-  margin: 1.5rem;
-  padding: 1.5rem;
+.home-news .header .card-title {
+  padding: 3.5rem;
   margin-left: 5px;
   text-align: center;
+}
+.home-news .header img {
+  width: 100%;
 }
 .home-news .note {
   text-align: center;
